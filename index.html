@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi Panjang</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Persegi Panjang</h1>
+        <p>Dibuat menggunakan HTML, CSS, dan Javascript</p>
+        <p>Oleh Tinus XI IPS2</p>
+        <hr>
+
+        <div class="content">
+            <form id="myForm">
+            <label for="panjang">Panjang (cm)</label> <br>
+            <input id="p" type="number" placeholder="Masukkan panjang">
+            <br>
+            <br>
+            <label id="lebar" for="lebar">Lebar (cm)</label> <br>
+
+            <input id="l" type="number" placeholder="Masukkan lebar">
+            <br>
+            <br>
+            <input type="reset" value="Reset p dan l">
+        </form>
+
+        <div class="hitungan">
+            <h3>Hitungan</h3>
+            <button onclick="hitungLuas()">Hitung Luas</button> <span id="luas"></span>
+            <br>
+            <br>
+            <button onclick="hitungKeliling()">Hitung Keliling</button> <span id="keliling"></span>
+            <br>
+            <br>
+            <button onclick="resetAll()">Reset All</button>
+        </div>
+        </div>
+        
+        
+    </div>
+
+    <script>
+        function hitungLuas() {
+            var panjang = document.getElementById('p').value;
+            var lebar = document.getElementById('l').value;
+            var luas = panjang * lebar;
+
+            document.getElementById('luas').innerHTML = ` Luas persegi empat di atas = ${luas} cm<sup>2</sup>`;
+        }
+
+        function hitungKeliling() {
+            var panjang = document.getElementById('p').value;
+            var lebar = document.getElementById('l').value;
+            var keliling = panjang*2 + lebar*2;
+
+            document.getElementById('keliling').innerHTML = ` Keliling persegi empat di atas = ${keliling} cm`;
+        }
+
+        function resetAll () {
+            document.getElementById('myForm').reset();
+            document.getElementById('luas').innerHTML = `<i>Isi dulu panjang dan lebar !</i>`;
+            document.getElementById('keliling').innerHTML = `<i>Isi dulu panjang dan lebar !</i>`;;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+	background-color: #03001C;
+	color: #301E67;
+	background-image: url(https://media.istockphoto.com/id/827813582/id/foto/latar-belakang-teknologi-abstrak-nomor-kode-digital.jpg?s=2048x2048&w=is&k=20&c=WYptXj4VTTgcARhVm78tcf7BGUnF8eLEPstdtJVZMe0=);
+.container {
+	width: 800px;
+	background-color: #B6EADA;
+	margin: 40px auto;
+	padding: 30px;
+	border: 1px solid #5B8FB9;
+	border-radius: 50px 0;
+}
+
+hr {
+	border: 2px solid #301E67;
+}
+.container h1, p {
+	color: #301E67;
+	text-align: center;
+}
+.content {
+	display: flex;
+}
+#myForm {
+	margin-top: 30px;
+	width: 40%;
+	border-right: 2px solid #5B8FB9;
+}
+input {
+	width: 150px;
+	padding: 8px 30px;
+	border: 1px solid #5B8FB9;
+	border-radius: 15px 0;
+}
+.hitungan {
+	width: 60%;
+	padding-left: 30px;
+}
+button {
+	width: 155px;
+	padding: 8px 30px;
+	border: 1px solid #5B8FB9;
+	border-radius: 15px 0;
+}
